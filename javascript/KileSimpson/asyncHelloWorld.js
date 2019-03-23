@@ -6,10 +6,15 @@ var Person = {
 }
 
 var getName = new Promise(function(resolve) {
+    var name = Person.name.toLocaleUpperCase();
     setTimeout(function() {
-        resolve(Person.name)}, 2000);
+        resolve(name)}, 2000);
 })
 
-getName.then(function(returnedData) {
-    console.log(returnedData);
-})
+getName.then(printData, result) {
+   returnedData;
+};
+
+var printData = function(data) {
+    console.log(data);
+}
