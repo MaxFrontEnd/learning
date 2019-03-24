@@ -14,4 +14,4 @@ var hospital = new Building(4, 3, 55);
 
 myHouse.structure();
 magazine.structure();
-hospital.structure();
+hospital.structure(); 
